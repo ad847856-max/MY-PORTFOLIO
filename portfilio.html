@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">my<span>Portfolio.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-button" id="themeButton">☾</button>
+        <button class="menu-button" id="menuButton">☰</button>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <p class="small-heading">HELLO, WORLD! 👋</p>
+
+            <h1>I'm a <span class="highlight">BTech CSE Student</span></h1>
+
+            <h2>Learning. Building. Improving.</h2>
+
+            <p class="intro">
+                I'm in my third year of Computer Science and Engineering.
+                I'm learning Java, DSA, HTML and CSS, and turning what
+                I learn into small projects.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="button">Explore My Work</a>
+                <a href="#about" class="button button-outline">About Me</a>
+            </div>
+
+            <div class="quick-facts">
+                <div>
+                    <strong>3rd Year</strong>
+                    <span>BTech CSE</span>
+                </div>
+                <div>
+                    <strong>In Progress</strong>
+                    <span>Java + DSA</span>
+                </div>
+                <div>
+                    <strong>Small Steps</strong>
+                    <span>Every Day</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="code-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>about_me.java</p>
+            </div>
+
+            <div class="code-content">
+                <p><span class="purple">class</span> <span class="yellow">Developer</span> {</p>
+                <p class="indent"><span class="purple">String</span> goal = <span class="green">"Keep learning"</span>;</p>
+                <p class="indent"><span class="purple">String</span> focus = <span class="green">"Java + DSA"</span>;</p>
+                <p class="indent"><span class="purple">boolean</span> keepGoing = <span class="orange">true</span>;</p>
+                <p>}</p>
+                <div class="cursor-line">▌ Building my future...</div>
+            </div>
+
+            <div class="hero-emoji">💻</div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <p class="section-tag">A LITTLE ABOUT ME</p>
+
+        <h2 class="section-title">
+            Not an expert yet —
+            <span class="highlight">and that's okay.</span>
+        </h2>
+
+        <div class="about-card">
+            <p>
+                I'm a third-year BTech CSE student working toward becoming
+                more confident at coding and preparing for placements.
+                I prefer understanding code step by step instead of
+                memorising solutions.
+            </p>
+
+            <p>
+                Right now, I'm strengthening my Java basics, arrays,
+                loops and beginner DSA patterns while building my
+                web development skills.
+            </p>
+
+            <p>
+                Outside coding, I'm into anime, gaming and volleyball.
+            </p>
+
+            <div class="interest-list">
+                <span>🎌 Anime</span>
+                <span>🎮 Gaming</span>
+                <span>🏐 Volleyball</span>
+                <span>🧠 Problem Solving</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <p class="section-tag">WHAT I'M LEARNING</p>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">☕</div>
+                <h3>Java</h3>
+                <p>Loops, arrays, methods and beginner coding problems.</p>
+                <div class="skill-line"><span style="width: 55%"></span></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🧩</div>
+                <h3>DSA</h3>
+                <p>Arrays, running sums, two pointers and sliding window basics.</p>
+                <div class="skill-line"><span style="width: 40%"></span></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <p>Page structure, styling, Flexbox and CSS Grid.</p>
+                <div class="skill-line"><span style="width: 60%"></span></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Python basics and Matplotlib data visualisation.</p>
+                <div class="skill-line"><span style="width: 35%"></span></div>
+            </div>
+        </div>
+
+        <p class="note">
+            These skill bars are visual placeholders. Change them as you learn.
+        </p>
+    </section>
+
+    <section class="section projects" id="projects">
+        <p class="section-tag">THINGS I'VE WORKED ON</p>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="web">Web</button>
+            <button class="filter-button" data-filter="java">Java / DSA</button>
+            <button class="filter-button" data-filter="python">Python</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card" data-category="web">
+                <div class="project-art tic-art">
+                    <div>⭕ × ⭕</div>
+                    <h3>TIC TAC TOE</h3>
+                </div>
+
+                <div class="project-info">
+                    <p class="project-type">WEB DEVELOPMENT</p>
+                    <h3>Tic Tac Toe Game</h3>
+
+                    <p>
+                        A browser game built using HTML, CSS and JavaScript,
+                        with win detection and a fun winning animation.
+                    </p>
+
+                    <div class="tag-row">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#contact" class="project-link">Ask me about it ↗</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java">
+                <div class="project-art java-art">{ Java }</div>
+
+                <div class="project-info">
+                    <p class="project-type">JAVA / DSA</p>
+                    <h3>DSA Practice</h3>
+
+                    <p>
+                        My coding practice journey covering arrays,
+                        loops, running sums and sliding window concepts.
+                    </p>
+
+                    <div class="tag-row">
+                        <span>Java</span>
+                        <span>Arrays</span>
+                        <span>LeetCode</span>
+                    </div>
+
+                    <a href="#contact" class="project-link">Ask me about it ↗</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="python">
+                <div class="project-art python-art">📊</div>
+
+                <div class="project-info">
+                    <p class="project-type">PYTHON</p>
+                    <h3>Data Visualisation</h3>
+
+                    <p>
+                        Practising charts using Python and Matplotlib,
+                        including pie charts and chart labels.
+                    </p>
+
+                    <div class="tag-row">
+                        <span>Python</span>
+                        <span>Matplotlib</span>
+                    </div>
+
+                    <a href="#contact" class="project-link">Ask me about it ↗</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="goal-box">
+            <p class="section-tag">MY NEXT MILESTONE</p>
+
+            <h2>
+                One problem. One project.
+                <span class="highlight">One step forward.</span>
+            </h2>
+
+            <p>
+                My current goal is to become more confident at writing
+                Java code independently and keep building projects
+                for my placement preparation.
+            </p>
+
+            <a href="#contact" class="button">Let's Connect</a>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <p class="section-tag">SAY HELLO</p>
+        <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+
+        <div class="contact-card">
+            <p>
+                I'm still growing as a developer, but I'm always open
+                to learning and collaborating.
+            </p>
+
+            <button class="button" id="copyButton">
+                Copy Portfolio Intro
+            </button>
+
+            <p id="copyMessage" class="copy-message"></p>
+
+            <p class="contact-hint">
+                Add your real email and profile links before publishing.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/ad847856-max?utm_source=chatgpt.com" target="_blank">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/adityasingh1444" target="_blank">LinkedIn ↗</a>
+                <a href="https://wa.me/9559262916" target="_blank">WhatsApp ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#home" class="logo">my<span>Portfolio.</span></a>
+        <p>Made with HTML, CSS and JavaScript ✨</p>
+        <p>© <span id="year"></span> Learning in public.</p>
+    </footer>
+
+    <script src="./portfolio.js"></script>
+</body>
+</html>
